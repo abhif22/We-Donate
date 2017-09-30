@@ -24,12 +24,16 @@ let NgoSchema = new Schema({
             type:String
         },
         city:{
-            type:String
+            type:String,
+            required: true
         }
     },
     authentication :{
         type:Boolean,
         default : false
+    },
+    authenticationSecret: {
+        type: String   
     },
     coverPic:[{
         type: Schema.Types.ObjectId,
@@ -48,7 +52,7 @@ let NgoSchema = new Schema({
     website: {
         url: {
             type: String
-        },
+        }
     },
     password: {
         type: String,
@@ -64,9 +68,17 @@ let NgoSchema = new Schema({
         type: Date,
     },
     socialLinks: {
-        type: [String]
+        facebook: {
+            type: String
+        },
+        twitter: {
+            type: String
+        },
+        instagram: {
+            type: String
+        }
     },
-    followerscount : {
+    followersCount : {
         type:Number,
         default:0
     }
