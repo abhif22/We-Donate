@@ -7,6 +7,10 @@
   },
   "dependencies": {
     "morgan": "~1.8.1",
+
+    "passport": "^0.4.0",
+    "serve-favicon": "~2.4.2",
+
     "serve-favicon": "~2.4.2",
     "bcrypt": "^1.0.2",
     "bcryptjs": "^2.4.3",
@@ -35,5 +39,6 @@
     "random-world": "^1.2.0",
     "shortid": "^2.2.8",
     "unix-timestamp": "^0.2.0"
+
   }
 }
